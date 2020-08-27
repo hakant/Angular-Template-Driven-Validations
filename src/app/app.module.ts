@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MustMatchDirective } from './_helpers/must-match.directive';
+import { MinValidatorDirective } from './directives/min-validator.directive';
+import { MaxValidatorDirective } from './directives/max-validator.directive';
 
 @NgModule({
     imports: [
@@ -12,7 +14,9 @@ import { MustMatchDirective } from './_helpers/must-match.directive';
     ],
     declarations: [
         AppComponent,
-        MustMatchDirective
+        MustMatchDirective,
+        MinValidatorDirective,
+        MaxValidatorDirective
     ],
     bootstrap: [AppComponent]
 })
